@@ -1,0 +1,560 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201115.152034.10757.0.001.json",
+    "dumpEventTime": "2020-11-15T15:20:34Z",
+    "dumpEventTimeStamp": "1605471634740",
+    "processId": 10757,
+    "threadId": null,
+    "cwd": "/Users/shamellakin/Flatiron/react/react-dynamic-components-lab-onl01-seng-pt-032320",
+    "commandLine": [
+      "/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node",
+      "/Users/shamellakin/Flatiron/react/react-dynamic-components-lab-onl01-seng-pt-032320/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "--compilers",
+      "js:babel-register",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.10.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.10.1",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "20.1.0",
+    "osVersion": "Darwin Kernel Version 20.1.0: Sat Oct 31 00:07:11 PDT 2020; root:xnu-7195.50.7~2/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 3737580,
+        "nice": 0,
+        "sys": 2361720,
+        "idle": 19131160,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 542810,
+        "nice": 0,
+        "sys": 338190,
+        "idle": 24345700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 3648190,
+        "nice": 0,
+        "sys": 1696760,
+        "idle": 19882010,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 536930,
+        "nice": 0,
+        "sys": 309890,
+        "idle": 24379880,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 2857840,
+        "nice": 0,
+        "sys": 1213350,
+        "idle": 21155760,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 536550,
+        "nice": 0,
+        "sys": 291850,
+        "idle": 24398290,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 2445130,
+        "nice": 0,
+        "sys": 997390,
+        "idle": 21784420,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8257U CPU @ 1.40GHz",
+        "speed": 1400,
+        "user": 533080,
+        "nice": 0,
+        "sys": 280410,
+        "idle": 24413180,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en3",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "f8:ff:c2:27:c5:1f",
+        "address": "fe80::89b:13b1:9485:3e72",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "f8:ff:c2:27:c5:1f",
+        "address": "192.168.1.252",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "f8:ff:c2:27:c5:1f",
+        "address": "2600:1700:f820:da0:104f:48c9:b56a:4045",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "f8:ff:c2:27:c5:1f",
+        "address": "2600:1700:f820:da0:d9e8:a408:cfdd:5c41",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "f8:ff:c2:27:c5:1f",
+        "address": "2600:1700:f820:da0::35",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "8a:7c:51:f6:7c:c5",
+        "address": "fe80::887c:51ff:fef6:7cc5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "8a:7c:51:f6:7c:c5",
+        "address": "fe80::887c:51ff:fef6:7cc5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::55f9:f769:650b:4a52",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::f3ba:8aa0:cfb1:9ead",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::911b:ff7e:de4c:b1d7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "utun3",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::6879:3e21:58cc:df0d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      }
+    ],
+    "host": "Shamels-MBP.attlocal.net"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001a73bc",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100096ff7",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001dafd7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001daf73",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035da45",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035f124",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035bebe",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100359ea6",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010036582a",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001003658b1",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100332bf6",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100672a08",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001009aec79",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2154618880,
+    "totalCommittedMemory": 2151163560,
+    "usedMemory": 2142843456,
+    "availableMemory": 50421952,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 1321608,
+        "capacity": 2094848,
+        "used": 334712,
+        "available": 1760136
+      },
+      "old_space": {
+        "memorySize": 2137665536,
+        "committedMemory": 2137400352,
+        "capacity": 2134516592,
+        "used": 2131146040,
+        "available": 3370552
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 603776,
+        "capacity": 535552,
+        "used": 535552,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2101248,
+        "committedMemory": 2101072,
+        "capacity": 1176160,
+        "used": 1176160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 9654272,
+        "committedMemory": 9654272,
+        "capacity": 9615168,
+        "used": 9615168,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2094848,
+        "used": 0,
+        "available": 2094848
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 50.0174,
+    "kernelCpuSeconds": 2.47753,
+    "cpuConsumptionPercent": 209.98,
+    "maxRss": 2275628023808,
+    "pageFaults": {
+      "IORequired": 32,
+      "IONotRequired": 764799
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "rvm_bin_path": "/Users/shamellakin/.rvm/bin",
+    "TERM_PROGRAM": "vscode",
+    "GEM_HOME": "/Users/shamellakin/.rvm/gems/ruby-2.6.1",
+    "NVM_CD_FLAGS": "-q",
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh",
+    "IRBRC": "/Users/shamellakin/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "TMPDIR": "/var/folders/3n/16fgf2m562b1mvs3s9xss7t00000gn/T/",
+    "TERM_PROGRAM_VERSION": "1.51.1",
+    "MY_RUBY_HOME": "/Users/shamellakin/.rvm/rubies/ruby-2.6.1",
+    "TERM_SESSION_ID": "E3B1D458-312B-4147-9253-4917BA6FD048",
+    "GIT_EDITOR": "code",
+    "NVM_DIR": "/Users/shamellakin/.nvm",
+    "SVN_EDITOR": "code",
+    "USER": "shamellakin",
+    "USR_PATHS": "/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin",
+    "rvm_path": "/Users/shamellakin/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.og81gnVCGJ/Listeners",
+    "rvm_prefix": "/Users/shamellakin",
+    "PATH": "/Users/shamellakin/.rvm/gems/ruby-2.6.1/bin:/Users/shamellakin/.rvm/gems/ruby-2.6.1@global/bin:/Users/shamellakin/.rvm/rubies/ruby-2.6.1/bin:/Users/shamellakin/.nvm/versions/node/v13.10.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shamellakin/.rvm/bin",
+    "__CFBundleIdentifier": "com.apple.Terminal",
+    "PWD": "/Users/shamellakin/Flatiron/react/react-dynamic-components-lab-onl01-seng-pt-032320",
+    "EDITOR": "code",
+    "LANG": "en_US.UTF-8",
+    "NODE_PATH": "/usr/local/lib/node_modules:/usr/local/lib/node_modules:",
+    "XPC_FLAGS": "0x0",
+    "GIT_MERGE_AUTOEDIT": "no",
+    "XPC_SERVICE_NAME": "0",
+    "rvm_version": "1.29.9-next (master)",
+    "HOME": "/Users/shamellakin",
+    "SHLVL": "3",
+    "LOGNAME": "shamellakin",
+    "VISUAL": "code",
+    "GEM_PATH": "/Users/shamellakin/.rvm/gems/ruby-2.6.1:/Users/shamellakin/.rvm/gems/ruby-2.6.1@global",
+    "NVM_BIN": "/Users/shamellakin/.nvm/versions/node/v13.10.1/bin",
+    "FLATIRON_VERSION": "1.1.1",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "COLORTERM": "truecolor",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/3n/16fgf2m562b1mvs3s9xss7t00000gn/T/vscode-git-06f450c494.sock",
+    "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "OLDPWD": "/Users/shamellakin/Flatiron/react/react-dynamic-components-lab-onl01-seng-pt-032320",
+    "_": "/Users/shamellakin/.rvm/gems/ruby-2.6.1/bin/learn",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_GEM_HOME": "/Users/shamellakin/.rvm/gems/ruby-2.6.1",
+    "BUNDLER_ORIG_GEM_PATH": "/Users/shamellakin/.rvm/gems/ruby-2.6.1:/Users/shamellakin/.rvm/gems/ruby-2.6.1@global",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_PATH": "/Users/shamellakin/.rvm/gems/ruby-2.6.1/bin:/Users/shamellakin/.rvm/gems/ruby-2.6.1@global/bin:/Users/shamellakin/.rvm/rubies/ruby-2.6.1/bin:/Users/shamellakin/.nvm/versions/node/v13.10.1/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shamellakin/.rvm/bin",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048575,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/shamellakin/.nvm/versions/node/v13.10.1/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/liboah.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/System/Library/PrivateFrameworks/SoftLinking.framework/Versions/A/SoftLinking",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_collections.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_containermanager.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_product_info_filter.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
